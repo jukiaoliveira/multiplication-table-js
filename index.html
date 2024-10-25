@@ -1,34 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabuada JS</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabuada</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/scripts.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Digite o número e confirme para gerar uma tabuada</h2>
     <form id="multiplication-form">
-        <div class="form-control">
-            <label for="number">Tabuada do:</label>
-            <input type="number" name="number" id="number" placeholder="3"/>
-        </div>
-        <div class="form-control">
-            <label for="multiplication">Multiplicar até:</label>
-            <input 
-                type="number" 
-                name="multiplication" 
-                id="multiplication" 
-                value="10"/>
-        </div>
-        <input type="submit" value="Calcular" />
+      <div class="form-control">
+        <label>Tabuada do:</label>
+        <input type="number" id="number" placeholder="3" />
+      </div>
+      <div class="form-control">
+        <label>Multiplicar até:</label>
+        <input
+          type="number"
+          id="multiplicator"
+          placeholder="Digite o número de multiplicações"
+          value="10"
+        />
+      </div>
+      <input type="submit" value="Calcular" />
     </form>
     <div id="multiplication-table">
-        <h2 id="multiplication-title">Tabuada do número: <span></span></h2>
-        <div id="multiplication-operations">
-            <p>Informe o número para calcular uma tabuada...</p>
-        </div>
+      <h2 id="multiplication-title">Tabuada do número: <span></span></h2>
+      <div id="multiplication-operations">
+        <p>Informe um número para calcular uma tabuada...</p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
